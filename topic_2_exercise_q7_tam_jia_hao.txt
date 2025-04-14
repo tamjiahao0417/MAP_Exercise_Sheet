@@ -1,0 +1,22 @@
+Question 7
+Determine whether the following syntax for a function is valid:
+a.
+int getSum(int a, int b)
+-Valid
+
+b.
+boolean checkVal(required bool c)
+-Invalid
+-Dart uses bool, not Boolean
+-The required keyword is only used with named parameters, i.e., inside {}
+
+c.
+double getSum2({required int d, double e = 0.5})
+-Valid
+
+d.
+String showText(String name = null, String name2 = ’Phantom’)
+-Invalid
+-Dart does not allow default values for positional parameters unless they are optional named parameters or optional positional parameters in [].
+-Also null cannot be a default unless null-safety is explicitly handled.
+-'Phantom' uses the wrong quote, it should be 'not'.
